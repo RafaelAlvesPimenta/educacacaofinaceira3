@@ -1,0 +1,172 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Seção de Cadastro */
+.cadastro {
+    padding: 40px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.cadastro h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: 2px solid #2563eb;
+    outline: none;
+}
+
+/* Checkbox e Botão de Termos */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.cta-button {
+    background-color: #2563eb;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #1e3a8a;
+}
+
+/* Modal de Termos de Uso */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-conteudo {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+.modal p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.modal .fechar {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.modal .fechar:hover {
+    color: #2563eb;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simuladores - Educação Financeira</title>
+    <link rel="stylesheet" href="simuladores.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EDUCAÇÃO FINANCEIRA</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="dicas.html">Dicas</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="simuladores">
+        <div class="container">
+            <h2>Simuladores de Finanças</h2>
+            <p>Use os simuladores abaixo para planejar seus investimentos e entender melhor como suas finanças podem se desenvolver ao longo do tempo.</p>
+=
+            <div class="simulador">
+                <h3>Simulador de Poupança</h3>
+                <form id="simuladorForm">
+                    <label for="valor">Valor Inicial:</label>
+                    <input type="number" id="valor" name="valor" placeholder="Ex: 1000" required>
+                    <label for="tempo">Tempo (anos):</label>
+                    <input type="number" id="tempo" name="tempo" placeholder="Ex: 5" required>
+                    <label for="taxa">Taxa de Juros Anual (%):</label>
+                    <input type="number" id="taxa" name="taxa" placeholder="Ex: 5" required>
+                    <button type="button" onclick="calcularPoupanca()">Calcular</button>
+                </form>
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+        
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="simuladores.js"></script>
+</body>
+</html>
